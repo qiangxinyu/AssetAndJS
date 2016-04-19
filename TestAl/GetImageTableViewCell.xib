@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="GetImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相机胶卷（33）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpD-SO-X5N">
+                        <rect key="frame" x="76" y="29" width="213" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MdX-Mo-dtZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x2_carema.png" translatesAutoresizingMaskIntoConstraints="NO" id="8u3-Kg-j07">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="1KB-BE-ROl"/>
+                            <constraint firstAttribute="width" constant="60" id="rtn-Bu-gFo"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uzysAP_ico_checkMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Tk-z3-UP1">
+                        <rect key="frame" x="297" y="32" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Fya-XT-4Xx"/>
+                            <constraint firstAttribute="width" constant="15" id="YuY-z7-8F0"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Tk-z3-UP1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="9Rc-Iy-cow"/>
+                    <constraint firstItem="4Tk-z3-UP1" firstAttribute="leading" secondItem="XpD-SO-X5N" secondAttribute="trailing" constant="8" id="OEB-GX-bK4"/>
+                    <constraint firstItem="8u3-Kg-j07" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Voz-V1-Nts"/>
+                    <constraint firstItem="4Tk-z3-UP1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="24" id="ZTW-DA-NXo"/>
+                    <constraint firstItem="8u3-Kg-j07" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xPi-e6-qAe"/>
+                    <constraint firstItem="XpD-SO-X5N" firstAttribute="leading" secondItem="8u3-Kg-j07" secondAttribute="trailing" constant="8" id="xcb-qb-TgH"/>
+                    <constraint firstItem="XpD-SO-X5N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="21" id="zP0-40-nFj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageView" destination="8u3-Kg-j07" id="yr7-Le-JHP"/>
+                <outlet property="nameLabel" destination="XpD-SO-X5N" id="Uuh-fZ-t8r"/>
+                <outlet property="selectImageView" destination="4Tk-z3-UP1" id="CEn-Gu-bj7"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="396"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="uzysAP_ico_checkMark.png" width="15" height="15"/>
+        <image name="x2_carema.png" width="208" height="208"/>
+    </resources>
+</document>
